@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Book Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="heading">
+        <h1>LIBRARY</h1>
+        <h3>By Sanjay Sam Mathew</h3>
+        <button id="newBookButton" class="new-button">New Book</button>
+    </div>
+
+    <!-- Form for Adding a Book -->
+    <div class="form-container" id="formContainer" style="display: none;">
+        <input type="text" id="bookName" placeholder="Book Name">
+        <input type="text" id="authorName" placeholder="Author Name">
+        <input type="number" id="pages" placeholder="Number of Pages">
+        <button id="addBookButton" class="new-button">Add Book</button>
+    </div>
+
+    <!-- Container for Book Boxes -->
+    <div class="allign-container">
+        <div class="big-container" id="bookContainer">
+            <!-- Dynamically added book boxes will appear here -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
